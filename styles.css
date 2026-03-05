@@ -15,7 +15,7 @@
     --branco: #fff;
     /*Tamanhos fontes*/   
     --fs-lg:1.2rem;
-    --fs-md:1rem;
+    --fs-md:0.9rem;
 }
 
 body{
@@ -23,21 +23,23 @@ body{
 }
 
 /*Configuração única para diferentes telas*/
-
+main{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 .qr-container{
     background-color: var(--branco);
-    width: 320px;
-    padding: 20px;
-    border-radius: 10px;
+    max-width: 20rem;
+    padding: 1rem;
+    border-radius: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 20px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    gap: 0.9rem;
 }
 
 .qr-container img{
@@ -45,13 +47,21 @@ body{
     border-radius: 10px;
 }
 
+.qr-text {
+    display: flex;
+    flex-direction: column;
+    padding-block-start: 1rem;
+    
+    
+}
+
 .m-text {
     color: var(--azul-escuro);
     font-size: var(--fs-lg);
-    font-weight: 700;
-    text-align: center;
-    line-height: 1.2;
     font-weight: 800;
+    text-align: center;
+    line-height: 1.3;
+
 }
 
 .p-text{
@@ -60,4 +70,5 @@ body{
     text-align: center;
     line-height: 1.5;
     font-weight: 500;
+    padding: 1.5rem;
 }
