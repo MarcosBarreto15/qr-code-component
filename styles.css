@@ -16,6 +16,12 @@
     /*Tamanhos fontes*/   
     --fs-lg:1.2rem;
     --fs-md:0.9rem;
+
+    /*Tokens de Espaçamento e Raio*/  
+    --radius-lg: 20px;
+    --radius-sm: 10px;
+    --spacing-md: 1rem;
+    --spacing-lg: 1.5rem;
 }
 
 body{
@@ -26,6 +32,7 @@ body{
 /*Configuração única para diferentes telas*/
 main{
     width: 100%;
+    min-height: 100vh;
     min-height: 100svh;
     display: flex;
     justify-content: center;
@@ -35,8 +42,8 @@ main{
 .qr-container{
     background-color: var(--branco);
     max-width: 20rem;
-    padding: 1rem;
-    border-radius: 20px;
+    padding: var(--spacing-md);
+    border-radius: var(--radius-lg);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -46,7 +53,7 @@ main{
 
 .qr-container img{
     width: 100%;
-    border-radius: 10px;
+    border-radius: var(--radius-sm);
 }
 
 .qr-text {
@@ -72,5 +79,5 @@ main{
     text-align: center;
     line-height: 1.5;
     font-weight: 500;
-    padding: 1.5rem;
+    padding: var(--spacing-lg);
 }
